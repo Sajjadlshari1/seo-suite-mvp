@@ -3,11 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Suite MVP</title>
+    <title>SEO & Guest Posting Suite</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-slate-900 text-white font-sans p-6 text-center">
-    <h1 class="text-3xl font-bold text-blue-400 mt-10">Welcome to SEO Suite MVP</h1>
-    <p class="text-slate-400 mt-2">Your site is live and working perfectly!</p>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen">
+
+    <!-- Top Navigation Bar -->
+    <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <i class="fa-solid fa-chart-line text-blue-500 text-2xl"></i>
+            <span class="font-bold text-xl text-white tracking-wide">SEO Suite MVP</span>
+        </div>
+        <div class="flex items-center space-x-2 text-sm bg-slate-700/50 px-3 py-1.5 rounded-full border border-slate-600">
+            <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></span>
+            <span class="text-slate-300 font-medium">System Live</span>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto px-4 py-8">
+
+        <!-- Stats Overview Row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                <p class="text-xs text-slate-400 font-medium uppercase">Total Websites</p>
+                <h3 class="text-2xl font-bold text-white mt-1">124</h3>
+            </div>
+            <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                <p class="text-xs text-slate-400 font-medium uppercase">Avg Domain Auth (DA)</p>
+                <h3 class="text-2xl font-bold text-blue-400 mt-1">48</h3>
+            </div>
+            <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                <p class="text-xs text-slate-400 font-medium uppercase">Outreach Pending</p>
+                <h3 class="text-2xl font-bold text-amber-400 mt-1">12</h3>
+            </div>
+            <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                <p class="text-xs text-slate-400 font-medium uppercase">Live Backlinks</p>
+                <h3 class="text-2xl font-bold text-emerald-400 mt-1">89</h3>
+            </div>
+        </div>
+
+        <!-- Quick Domain Analyzer Tool -->
+        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 mb-8 shadow-xl">
+            <h2 class="text-lg font-semibold text-white mb-2">Quick Metrics Analyzer</h2>
+            <p class="text-sm text-slate-400 mb-4">Website ka URL daal kar metrics check karein:</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <input type="text" placeholder="e.g. example.com" class="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+                <button onclick="alert('System Analyzing Metrics...')" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-lg transition-all flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Analyze Domain</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Recent Outreach Sites Table -->
+        <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl">
+            <div class="p-6 border-b border-slate-700 flex justify-between items-center">
+                <h2 class="text-lg font-semibold text-white">Verified Guest Post Sites</h2>
+                <span class="text-xs text-slate-400">Showing top sites</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-300">
+                    <thead class="bg-slate-900/50 text-xs text-slate-400 uppercase border-b border-slate-700">
+                        <tr>
+                            <th class="p-4">Domain</th>
+                            <th class="p-4">Niche</th>
+                            <th class="p-4">DA</th>
+                            <th class="p-4">Traffic</th>
+                            <th class="p-4">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr class="hover:bg-slate-700/30">
+                            <td class="p-4 font-medium text-white">techcrunch.com</td>
+                            <td class="p-4">Technology</td>
+                            <td class="p-4 text-emerald-400 font-bold">92</td>
+                            <td class="p-4">12.5M</td>
+                            <td class="p-4"><span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-full text-xs">Approved</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-700/30">
+                            <td class="p-4 font-medium text-white">searchengineland.com</td>
+                            <td class="p-4">SEO / Marketing</td>
+                            <td class="p-4 text-emerald-400 font-bold">88</td>
+                            <td class="p-4">3.2M</td>
+                            <td class="p-4"><span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-full text-xs">Approved</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-700/30">
+                            <td class="p-4 font-medium text-white">businessinsider.com</td>
+                            <td class="p-4">Business</td>
+                            <td class="p-4 text-emerald-400 font-bold">91</td>
+                            <td class="p-4">25.0M</td>
+                            <td class="p-4"><span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2.5 py-1 rounded-full text-xs">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
